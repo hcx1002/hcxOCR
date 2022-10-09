@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/login_text_user"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector_edit_frame"
+        android:ems="10"
+        android:hint="@string/title_user"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@color/black_e6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/login_text_pass"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/selector_edit_frame"
+        android:ems="10"
+        android:hint="@string/title_pass"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColorHint="@color/black_e6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text_user" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text_pass">
+
+        <com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/login_login"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="30dp"
+            app:buttonText="@string/title_login" />
+
+        <com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/login_regis"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            app:buttonText="@string/title_regis" />
+    </LinearLayout>
+
+    <com.unstoppable.submitbuttonview.SubmitButton
+        android:id="@+id/login_qq"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        app:buttonText="@string/title_loginQQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
